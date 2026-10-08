@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main id="app">
+
+        <section id="inputPage">
+
+            <h1>GitHub Profile Analyzer</h1>
+
+            <p>Enter a GitHub username to analyze the profile.</p>
+
+            <form id="profileForm">
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter GitHub username"
+                    required
+                >
+
+                <button type="submit" id="generateBtn">
+                    Generate Profile
+                </button>
+
+            </form>
+
+            <p id="loadingMessage">Loading...</p>
+
+            <p id="errorMessage"></p>
+
+        </section>
+
+
+        <section id="profilePage">
+
+            <button id="backBtn">← Back</button>
+
+            <div id="profileCard">
+
+                <img id="avatar" src="" alt="GitHub Avatar">
+
+                <h1 id="name"></h1>
+
+                <a id="usernameLink" href="#" target="_blank"></a>
+
+                <p id="bio"></p>
+
+                <p id="location"></p>
+
+                <p id="company"></p>
+
+
+                <div id="stats">
+
+                    <div>
+                        <span>Repositories</span>
+                        <strong id="repoCount"></strong>
+                    </div>
+
+                    <div>
+                        <span>Followers</span>
+                        <strong id="followers"></strong>
+                    </div>
+
+                    <div>
+                        <span>Following</span>
+                        <strong id="following"></strong>
+                    </div>
+
+                </div>
+
+
+                <h2>Languages</h2>
+
+                <div id="languages"></div>
+
+
+                <h2>Top Repositories</h2>
+
+                <div id="repositories"></div>
+                 <h2>Top Repositories</h2>
+
+<div id="repositories"></div>
+
+
+<h2>AI Profile Review</h2>
+
+<button id="reviewBtn">
+    Generate AI Review
+</button>
+
+<div id="aiLoading">
+    Generating AI review...
+</div>
+
+<div id="aiResult">
+
+    <h3>Summary</h3>
+    <p id="aiSummary"></p>
+
+    <h3>Strengths</h3>
+    <ul id="aiStrengths"></ul>
+
+    <h3>Improvements</h3>
+    <ul id="aiImprovements"></ul>
+
+    <h3>Recommendations</h3>
+    <ul id="aiRecommendations"></ul>
+
+</div>
+
+
+
+
+                <button id="downloadBtn">
+                    Download Card
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script src="js.js"></script>
+
+</body>
+
+</html>

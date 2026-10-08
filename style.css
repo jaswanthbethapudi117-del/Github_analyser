@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #0d1117;
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputPage {
+    width: 90%;
+    max-width: 500px;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #8b949e;
+}
+
+form {
+    margin-top: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+
+    background: #0d1117;
+    color: white;
+
+    border: 1px solid #30363d;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+
+    background: #238636;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2ea043;
+}
+
+#loadingMessage {
+    color: #58a6ff;
+}
+
+#errorMessage {
+    color: #f85149;
+}
+#profilePage {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+#backBtn {
+    width: auto;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+
+    background: #21262d;
+    border: 1px solid #30363d;
+}
+
+#backBtn:hover {
+    background: #30363d;
+}
+
+#profileCard {
+    padding: 30px;
+
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+}
+
+
+/* Profile */
+
+#avatar {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+    border: 3px solid #30363d;
+}
+
+#name {
+    margin-bottom: 5px;
+}
+
+#usernameLink {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+#bio {
+    color: #8b949e;
+}
+
+
+/* Statistics */
+
+#stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#stats div {
+    padding: 15px;
+
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+
+    text-align: center;
+}
+
+#stats span {
+    display: block;
+    color: #8b949e;
+    font-size: 14px;
+}
+
+#stats strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 22px;
+}
+
+
+/* Languages and Repositories */
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    font-size: 20px;
+
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 8px;
+}
+
+#languages,
+#repositories {
+    margin-top: 15px;
+}
+
+#languages > *,
+#repositories > * {
+    padding: 12px;
+
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+}
+#profileCard {
+    text-align: center;
+}
+
+#avatar {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+#name {
+    margin: 5px 0;
+    font-size: 28px;
+}
+
+#usernameLink {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#bio {
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 1.5;
+}
+
+#location,
+#company {
+    margin: 5px;
+}
+
+
+
+/* Download */
+
+#downloadBtn {
+    margin-top: 30px;
+    width: 100%;
+}
+/*rep*/ 
+#repositories > * {
+    padding: 15px;
+
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+
+    transition: border-color 0.2s;
+}
+
+#repositories > *:hover {
+    border-color: #58a6ff;
+}
+/*lang*/
+#languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#languages > * {
+    padding: 8px 14px;
+
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 20px;
+
+    color: #58a6ff;
+}
+/*res*/
+@media (max-width: 600px) {
+
+    #inputPage {
+        padding: 25px;
+        margin: 40px auto;
+    }
+
+    #profilePage {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    #profileCard {
+        padding: 20px;
+    }
+
+    #stats {
+        grid-template-columns: 1fr;
+    }
+
+}
+/*ai*/
+#aiLoading {
+    display: none;
+    margin-top: 15px;
+    color: #58a6ff;
+}
+
+#aiResult {
+    display: none;
+    margin-top: 20px;
+}
+
+#aiResult h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+#aiResult ul {
+    padding-left: 20px;
+}
+
+#aiResult li {
+    margin-bottom: 8px;
+}
+#reviewBtn {
+    width: 100%;
+    margin-top: 10px;
+    background: #8957e5;
+}
+
+#reviewBtn:hover {
+    background: #a371f7;
+}
+
+#aiResult {
+    padding: 20px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+}
+
+#aiResult h3 {
+    color: #58a6ff;
+}
+
+#aiResult p {
+    line-height: 1.6;
+}
+
+#aiResult li {
+    line-height: 1.5;
+}
